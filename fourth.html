@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAGER - Play, Win, Repeat!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #FFD700;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('https://img.freepik.com/free-vector/realistic-casino-gambling-dice-dark-banner-with-light-streak-effect_1017-54094.jpg?t=st=1739331685~exp=1739335285~hmac=d116df442f43743bedc95c4341fd16f8f194a997455e60f55ca6571b92560d2c&w=2000') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1;
+        }
+
+        .hero h2, .hero p, .cta-btn {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px #FFD700;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            background: #FF4500;
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            border-radius: 8px;
+        }
+
+        .cta-btn:hover {
+            background: #FFD700;
+            transform: scale(1.05);
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            background: #111;
+        }
+
+        .feature-card {
+            background: #222;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        footer {
+            background: #000;
+            color: #FFD700;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>WAGER</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Spin, Win, and Feel the Thrill!</h2>
+        <p>Join WAGER for the ultimate mobile casino experience.</p>
+        <button class="cta-btn">Play Now</button>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🎰 Slots Galore</h3>
+            <p>Thousands of exciting slot games to choose from!</p>
+        </div>
+        <div class="feature-card">
+            <h3>♠️ Live Casino</h3>
+            <p>Feel the rush with live dealers anytime, anywhere.</p>
+        </div>
+        <div class="feature-card">
+            <h3>💰 Big Jackpots</h3>
+            <p>Massive jackpots and rewards waiting for you!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 WAGER. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
