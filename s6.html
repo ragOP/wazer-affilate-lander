@@ -30,14 +30,41 @@
   }
 }
   </style>
+   <script>
+    // Detect mobile screen size
+    if (window.innerWidth <= 768) { // Mobile width range
+      // If it's a mobile device, hide the desktop video source
+      document.getElementById('desktop-video').setAttribute('src', 'mob6.mp4');
+      document.getElementById('mobile-video').style.display = 'none'; // Ensure mobile video is displayed
+    } else {
+      // If it's a desktop or larger device, hide the mobile video source
+      document.getElementById('mobile-video').style.display = 'none';
+    }
+  </script>
     <meta name="robots" content="noindex,nofollow">
     
   </head>
   <body class=" " data-coupon="BUFFALOWHALE">
-    <video autoplay muted loop playsinline style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
-          <source src="k6.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
+   <video autoplay muted loop playsinline style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;" id="video-background">
+    <!-- Default video (for desktop) -->
+    <source src="k6.mp4" type="video/mp4" id="desktop-video">
+    <!-- Mobile video (to be shown on mobile devices) -->
+    <source src="mob6.mp4" type="video/mp4" id="mobile-video">
+    Your browser does not support the video tag.
+</video>
+
+<script>
+  // Detect mobile screen size
+  if (window.innerWidth <= 768) { // Mobile width range
+    // If it's a mobile device, hide the desktop video source
+    document.getElementById('desktop-video').setAttribute('src', 'raghib.mp4');
+    document.getElementById('mobile-video').style.display = 'none'; // Ensure mobile video is displayed
+  } else {
+    // If it's a desktop or larger device, hide the mobile video source
+    document.getElementById('mobile-video').style.display = 'none';
+  }
+</script>
+
     <main class="flex bonus-inner">
       <header class="header flex">
           <a href="https://betwhale.ag/?affid=3463&mytoken=qDJk5DJSo7D5BvQ7eEs6d2Nd7ZgqdRLk" class="header-logo for-mobile">
