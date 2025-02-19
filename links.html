@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Roboto', sans-serif;
       background: #f0f2f5;
@@ -21,74 +23,118 @@
       height: 100vh;
       padding: 20px;
     }
+
+    .wrapper {
+      display: flex;
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .container {
+      flex: 1;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
     h1 {
       background: linear-gradient(135deg, #FF6347, #FF4500);
       color: white;
-      font-size: 2.5rem;
-      padding: 15px 40px;
-      border-radius: 10px;
+      font-size: 1.5rem;
+      padding: 10px;
+      border-radius: 8px;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 15px;
     }
-    .container {
-      background-color: white;
-      border-radius: 10px;
-      padding: 40px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 600px;
-    }
-    .container p {
-      font-size: 1.2rem;
+
+    p {
+      font-size: 1rem;
       color: #555;
-      margin-bottom: 20px;
-      line-height: 1.8;
+      margin-bottom: 10px;
+      text-align: center;
     }
-    .link-list {
-      list-style-type: none;
-      padding: 0;
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
     }
-    .link-list li {
-      margin: 20px 0;
-      transition: transform 0.3s ease;
-    }
-    .link-list li:hover {
-      transform: translateY(-5px);
-    }
-    .link-list a {
+
+    .link-grid a {
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       color: #007BFF;
       font-weight: bold;
-      padding: 10px 20px;
+      padding: 8px;
       border: 2px solid #007BFF;
       border-radius: 5px;
+      text-align: center;
+      display: inline-block;
       transition: background-color 0.3s, color 0.3s;
     }
-    .link-list a:hover {
+
+    .link-grid a:hover {
       background-color: #007BFF;
       color: white;
     }
-    .link-list a:active {
+
+    .link-grid a:active {
       background-color: #0056b3;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>Landing Pages</h1>
-    <p>Please find the links to the different landing pages below:</p>
-    <ul class="link-list">
-      <li><a href="https://wazer-affilate-lander.vercel.app/s1.html" target="_blank">Dog House</a></li>
-      <li><a href="https://wazer-affilate-lander.vercel.app/s2.html" target="_blank">Sugar Rush</a></li>
-      <li><a href="https://wazer-affilate-lander.vercel.app/s3.html" target="_blank">Zeus vs Hades</a></li>
-      <li><a href="https://wazer-affilate-lander.vercel.app/s4.html" target="_blank">Fruit Party</a></li>
-      <li><a href="https://wazer-affilate-lander.vercel.app/s5.html" target="_blank">Gates of Olympus</a></li>
-      <li><a href="https://wazer-affilate-lander.vercel.app/s6.html" target="_blank">Hades vs Zeus</a></li>
-    </ul>
+  <div class="wrapper">
+    <div class="container">
+      <h1>Game Landing Pages</h1>
+      <p>Select a landing page below:</p>
+      <div class="link-grid">
+        <a href="https://wazer-affilate-lander.vercel.app/s1.html" target="_blank">Dog House</a>
+        <a href="https://wazer-affilate-lander.vercel.app/s2.html" target="_blank">Sugar Rush</a>
+        <a href="https://wazer-affilate-lander.vercel.app/s3.html" target="_blank">Zeus vs Hades</a>
+        <a href="https://wazer-affilate-lander.vercel.app/s4.html" target="_blank">Fruit Party</a>
+        <a href="https://wazer-affilate-lander.vercel.app/s5.html" target="_blank">Gates of Olympus</a>
+        <a href="https://wazer-affilate-lander.vercel.app/s6.html" target="_blank">Hades vs Zeus</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Other Landing Pages</h1>
+      <p>Explore more landing pages:</p>
+      <div class="link-grid">
+        <a href="https://wazer-affilate-lander.vercel.app/index.html" target="_blank">Lander 1</a>
+        <a href="https://wazer-affilate-lander.vercel.app/second.html" target="_blank">Lander 2</a>
+        <a href="https://wazer-affilate-lander.vercel.app/third.html" target="_blank">Lander 3</a>
+        <a href="https://wazer-affilate-lander.vercel.app/fourth.html" target="_blank">Lander 4</a>
+        <a href="https://wazer-affilate-lander.vercel.app/fifth.html" target="_blank">Lander 5</a>
+        <a href="https://wazer-affilate-lander.vercel.app/seven.html" target="_blank">Lander 6</a>
+        <a href="https://wazer-affilate-lander.vercel.app/eight.html" target="_blank">Lander 7</a>
+        <a href="https://wazer-affilate-lander.vercel.app/nine.html" target="_blank">Lander 8</a>
+        <a href="https://wazer-affilate-lander.vercel.app/ten.html" target="_blank">Lander 9</a>
+        <a href="https://wazer-affilate-lander.vercel.app/eleven.html" target="_blank">Lander 10</a>
+        <a href="https://wazer-affilate-lander.vercel.app/twelve.html" target="_blank">Lander 11</a>
+        <a href="https://wazer-affilate-lander.vercel.app/thirteen.html" target="_blank">Lander 12</a>
+        <a href="https://wazer-affilate-lander.vercel.app/fourteen.html" target="_blank">Lander 13</a>
+        <a href="https://wazer-affilate-lander.vercel.app/fifteen.html" target="_blank">Lander 14</a>
+        <a href="https://wazer-affilate-lander.vercel.app/sixteen.html" target="_blank">Lander 15</a>
+        <a href="https://wazer-affilate-lander.vercel.app/seventeen.html" target="_blank">Lander 16</a>
+        <a href="https://wazer-affilate-lander.vercel.app/eighteen.html" target="_blank">Lander 17</a>
+        <a href="https://wazer-affilate-lander.vercel.app/88.html" target="_blank">Lander 18</a>
+        <a href="https://wazer-affilate-lander.vercel.app/89.html" target="_blank">Lander 19</a>
+        <a href="https://wazer-affilate-lander.vercel.app/90.html" target="_blank">Lander 20</a>
+        <a href="https://wazer-affilate-lander.vercel.app/e.html" target="_blank">Lander 21</a>
+        <a href="https://wazer-affilate-lander.vercel.app/e2.html" target="_blank">Lander 22</a>
+        <a href="https://wazer-affilate-lander.vercel.app/e3.html" target="_blank">Lander 23</a>
+        <a href="https://wazer-affilate-lander.vercel.app/e4.html" target="_blank">Lander 24</a>
+      </div>
+    </div>
   </div>
 
 </body>
+
 </html>
