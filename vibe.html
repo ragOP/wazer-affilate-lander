@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibrate Phone</title>
+    <title>Shake iPhone</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,20 +23,44 @@
         button:hover {
             background-color: #0056b3;
         }
+        /* Shake Animation */
+        @keyframes shake {
+            0% { transform: translate(2px, 2px) rotate(0deg); }
+            25% { transform: translate(-2px, -2px) rotate(-1deg); }
+            50% { transform: translate(2px, -2px) rotate(1deg); }
+            75% { transform: translate(-2px, 2px) rotate(0deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+        .shake {
+            animation: shake 0.3s ease-in-out infinite;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Shake Your Phone</h1>
-    <button onclick="vibratePhone()">Vibrate Phone</button>
+    <h1>Shake Your iPhone</h1>
+    <button onclick="shakePhone()">Shake iPhone</button>
 
     <script>
-        function vibratePhone() {
-            if ("vibrate" in navigator) {
-                navigator.vibrate([200, 100, 200]); // Vibrate for 200ms, pause for 100ms, vibrate for 200ms
-            } else {
-                alert("Vibration API not supported on this device.");
+        function shakePhone() {
+            // Haptic Feedback (for iPhone)
+            if (navigator.vibrate) {
+                navigator.vibrate([50, 50, 50]); // Works only on Android
+            } else if (window.navigator && window.navigator.webkit) {
+                try {
+                    window.navigator.webkit.messageHandlers.triggerHapticFeedback.postMessage("impactMedium");
+                } catch (e) {
+                    console.log("Haptic feedback not supported");
+                }
             }
+
+            // Add Shake Animation
+            document.body.classList.add("shake");
+
+            // Remove shake effect after 0.5s
+            setTimeout(() => {
+                document.body.classList.remove("shake");
+            }, 500);
         }
     </script>
 
