@@ -39,15 +39,19 @@
 <body>
 
     <h1>Shake Your iPhone</h1>
-    <button onclick="shakePhone()">Shake iPhone</button>
+    <button id="shakeButton">Shake iPhone</button>
 
-    <!-- Sound Effect -->
+    <!-- Sound Effect (Loud Vibrate Sound) -->
     <audio id="vibrateSound">
-        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+        <source src="https://www.fesliyanstudios.com/play-mp3/4384" type="audio/mpeg">
     </audio>
 
     <script>
-        function shakePhone() {
+        document.getElementById("shakeButton").addEventListener("click", function() {
+            // Force Sound to Play (iPhone requires user interaction)
+            let sound = document.getElementById("vibrateSound");
+            sound.play().catch(error => console.log("Sound play blocked:", error));
+
             // Haptic Feedback (for iPhone)
             if (window.navigator && window.navigator.vibrate) {
                 navigator.vibrate([50, 50, 50]); // Works only on Android
@@ -59,10 +63,6 @@
                 }
             }
 
-            // Play Sound Effect
-            let sound = document.getElementById("vibrateSound");
-            sound.play();
-
             // Add Shake Animation
             document.body.classList.add("shake");
 
@@ -70,7 +70,7 @@
             setTimeout(() => {
                 document.body.classList.remove("shake");
             }, 500);
-        }
+        });
     </script>
 
 </body>
