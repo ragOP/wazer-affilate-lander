@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shake iPhone</title>
+    <title>Shake iPhone with Sound</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,10 +41,15 @@
     <h1>Shake Your iPhone</h1>
     <button onclick="shakePhone()">Shake iPhone</button>
 
+    <!-- Sound Effect -->
+    <audio id="vibrateSound">
+        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+    </audio>
+
     <script>
         function shakePhone() {
             // Haptic Feedback (for iPhone)
-            if (navigator.vibrate) {
+            if (window.navigator && window.navigator.vibrate) {
                 navigator.vibrate([50, 50, 50]); // Works only on Android
             } else if (window.navigator && window.navigator.webkit) {
                 try {
@@ -53,6 +58,10 @@
                     console.log("Haptic feedback not supported");
                 }
             }
+
+            // Play Sound Effect
+            let sound = document.getElementById("vibrateSound");
+            sound.play();
 
             // Add Shake Animation
             document.body.classList.add("shake");
