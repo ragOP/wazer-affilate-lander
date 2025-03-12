@@ -55,14 +55,36 @@
           </a>
           <h1 class="content-title">
             <b style="margin-bottom: 10px;">125% </b>
-            <span>Deposit Match </span>
+            <span>Deposit Match Bonus</span>
           </h1>
        
          
          <!-- <h2>up to <b>$1,250</b></h2> -->
-         <h2 style="font-size: 38px;">
-         Bonus up to <b style="font-size: 42px;">$1,250</b>
+         <style>
+          #bonus-text {
+            font-size: 38px;
+          }
+        
+          #bonus-text b {
+            font-size: 42px;
+          }
+        
+          /* Adjust for smaller screens (mobile) */
+          @media (max-width: 768px) {
+            #bonus-text {
+              font-size: 28px;
+            }
+        
+            #bonus-text b {
+              font-size: 32px;
+            }
+          }
+        </style>
+        
+        <h2 id="bonus-text">
+           Up to <b>$1,250</b>
         </h2>
+        
         
           <div class="content-code flex">
             <div class="content-code__bonus">
