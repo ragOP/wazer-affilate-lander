@@ -751,7 +751,7 @@ main {
 
 @media only screen and (max-width: 584px) {
     .content-title span {
-        font-size: 8.53333vmin;
+        /* font-size: 8.53333vmin; */
         line-height: 9.33333vmin;
         letter-spacing: .096vmin;
         margin-left: 0
