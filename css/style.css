@@ -311,8 +311,8 @@ main {
     position: relative;
     color: #fff;
     text-transform: uppercase;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(13.64%, #ffb800), color-stop(83.33%, #ff8b02)), -webkit-gradient(linear, left top, left bottom, color-stop(12.12%, #fffcd1), to(#d95104));
-    background: linear-gradient(180deg, #ffb800 13.64%, #ff8b02 83.33%), linear-gradient(180deg, #fffcd1 12.12%, #d95104 100%)
+
+    background: linear-gradient(180deg, #F6C64A 13.64%, #F6C64A 83.33%), linear-gradient(180deg, #fffcd1 12.12%, #d95104 100%)
 }
 
 @media only screen and (max-width: 1024px) {
@@ -335,8 +335,8 @@ main {
 
 @media only screen and (hover: hover) {
     .header-nav__item:hover {
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(13.64%, #d95104), color-stop(83.33%, #d95104)), -webkit-gradient(linear, left top, left bottom, color-stop(12.12%, #ff8b02), to(#ffb800));
-        background: linear-gradient(180deg, #d95104 13.64%, #d95104 83.33%), linear-gradient(180deg, #ff8b02 12.12%, #ffb800 100%)
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(13.64%, #d95104), color-stop(83.33%, #d95104)), -webkit-gradient(linear, left top, left bottom, color-stop(12.12%, #F6C64A), to(#F6C64A));
+        background: linear-gradient(180deg, #d95104 13.64%, #d95104 83.33%), linear-gradient(180deg, #F6C64A 12.12%, #F6C64A 100%)
     }
 }
 
@@ -466,8 +466,8 @@ main {
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f9b035)) 0 0/auto padding-box border-box;
-    background: linear-gradient(#fff, #f9b035) 0 0/auto padding-box border-box;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#F6C64A)) 0 0/auto padding-box border-box;
+    background: linear-gradient(#fff, #F6C64A) 0 0/auto padding-box border-box;
     background-clip: 'border-box'
 }
 
@@ -645,7 +645,7 @@ main {
 }
 
 .content-title b {
-    color: #f9b035;
+    color: #F6C64A;
     font-size: 7.29167vw;
     font-style: normal;
     font-weight: 800;
@@ -672,7 +672,7 @@ main {
 .bonus-one .content-title b {
     font-size: 8.85417vw;
     line-height: 8.85417vw;
-    background: linear-gradient(180.58deg, #ffb800 14%, #ff8b02 104.1%);
+    background: linear-gradient(180.58deg, #F6C64A 14%, #F6C64A 104.1%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent
@@ -695,7 +695,7 @@ main {
 .bonus-offer .content-title b {
     font-size: 8.85417vw;
     line-height: 8.85417vw;
-    background: linear-gradient(180.58deg, #ffb800 14%, #ff8b02 104.1%);
+    background: linear-gradient(180.58deg, #F6C64A 14%, #F6C64A 104.1%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent
@@ -788,7 +788,7 @@ main {
 
 .bonus-double .content-title span {
     text-align: left;
-    background: linear-gradient(180.58deg, #ffb800 14%, #ff8b02 104.1%);
+    background: linear-gradient(180.58deg, #F6C64A 14%, #F6C64A 104.1%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -865,7 +865,7 @@ main {
 }
 
 .bonus-inner .content h2 b, .bonus-one .content h2 b {
-    color: #f9b035
+    color: #F6C64A
 }
 
 .bonus-offer .content h2 {
@@ -1136,8 +1136,8 @@ main {
 .content-code__link {
     font-size: 1.5625vw;
     border-radius: 20px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(13.64%, #f9b035), color-stop(83.33%, #ff9702));
-    background: linear-gradient(180deg, #f9b035 13.64%, #ff9702 83.33%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(13.64%, #F6C64A), color-stop(83.33%, #F6C64A));
+    background: linear-gradient(180deg, #F6C64A 13.64%, #F6C64A 83.33%);
     height: 100%;
     width: 12.96875vw;
     display: -webkit-box;
@@ -1236,7 +1236,7 @@ main {
 
 @media only screen and (hover: hover) {
     .content-code__link:hover {
-        background: #ff9702
+        background: #F6C64A
     }
 }
 
